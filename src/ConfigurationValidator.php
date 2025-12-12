@@ -19,8 +19,8 @@ class ConfigurationValidator
      * @param Validator|null $validator The JSON schema validator to use.
      */
     public function __construct(
-        stdClass $schema = null,
-        Validator $validator = null
+        ?stdClass $schema = null,
+        ?Validator $validator = null
     ) {
         if (null === $schema) {
             $schema = $this->loadDefaultSchema();

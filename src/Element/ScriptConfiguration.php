@@ -29,22 +29,22 @@ class ScriptConfiguration
      * @param mixed                      $rawData                The raw data describing the script configuration.
      */
     public function __construct(
-        array $preInstallCmd = null,
-        array $postInstallCmd = null,
-        array $preUpdateCmd = null,
-        array $postUpdateCmd = null,
-        array $preStatusCmd = null,
-        array $postStatusCmd = null,
-        array $prePackageInstall = null,
-        array $postPackageInstall = null,
-        array $prePackageUpdate = null,
-        array $postPackageUpdate = null,
-        array $prePackageUninstall = null,
-        array $postPackageUninstall = null,
-        array $preAutoloadDump = null,
-        array $postAutoloadDump = null,
-        array $postRootPackageInstall = null,
-        array $postCreateProjectCmd = null,
+        ?array $preInstallCmd = null,
+        ?array $postInstallCmd = null,
+        ?array $preUpdateCmd = null,
+        ?array $postUpdateCmd = null,
+        ?array $preStatusCmd = null,
+        ?array $postStatusCmd = null,
+        ?array $prePackageInstall = null,
+        ?array $postPackageInstall = null,
+        ?array $prePackageUpdate = null,
+        ?array $postPackageUpdate = null,
+        ?array $prePackageUninstall = null,
+        ?array $postPackageUninstall = null,
+        ?array $preAutoloadDump = null,
+        ?array $postAutoloadDump = null,
+        ?array $postRootPackageInstall = null,
+        ?array $postCreateProjectCmd = null,
         $rawData = null
     ) {
         if (null === $preInstallCmd) {

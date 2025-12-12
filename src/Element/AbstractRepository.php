@@ -16,7 +16,7 @@ abstract class AbstractRepository implements RepositoryInterface
      */
     public function __construct(
         $type,
-        array $options = null,
+        ?array $options = null,
         $rawData = null
     ) {
         if (null === $options) {

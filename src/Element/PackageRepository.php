@@ -16,7 +16,7 @@ class PackageRepository extends AbstractRepository
      */
     public function __construct(
         array $packageData,
-        array $options = null,
+        ?array $options = null,
         $rawData = null
     ) {
         parent::__construct(

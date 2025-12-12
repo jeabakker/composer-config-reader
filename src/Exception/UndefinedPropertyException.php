@@ -16,7 +16,7 @@ final class UndefinedPropertyException extends Exception implements
      * @param string         $property The requested property name.
      * @param Exception|null $previous The cause, if available.
      */
-    public function __construct($property, Exception $previous = null)
+    public function __construct($property, ?Exception $previous = null)
     {
         $this->property = $property;
 

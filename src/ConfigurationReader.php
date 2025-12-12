@@ -30,7 +30,7 @@ class ConfigurationReader
      *
      * @param ConfigurationValidator|null $validator The validator to use.
      */
-    public function __construct(ConfigurationValidator $validator = null)
+    public function __construct(?ConfigurationValidator $validator = null)
     {
         if (null === $validator) {
             $validator = new ConfigurationValidator();
@@ -161,7 +161,7 @@ class ConfigurationReader
      *
      * @return array<integer,Author>|null The newly created author list.
      */
-    protected function createAuthors(array $authors = null)
+    protected function createAuthors(?array $authors = null)
     {
         if (null !== $authors) {
             foreach ($authors as $index => $author) {
@@ -199,7 +199,7 @@ class ConfigurationReader
      *
      * @return SupportInformation|null The newly created support information object.
      */
-    protected function createSupport(stdClass $support = null)
+    protected function createSupport(?stdClass $support = null)
     {
         if (null !== $support) {
             $supportData = new ObjectAccess($support);
@@ -226,7 +226,7 @@ class ConfigurationReader
      *
      * @return array<string,array<integer,string>>|null The newly created PSR autoload information.
      */
-    protected function createAutoloadPsr(stdClass $autoloadPsr = null)
+    protected function createAutoloadPsr(?stdClass $autoloadPsr = null)
     {
         if (null !== $autoloadPsr) {
             $autoloadPsr = $this->objectToArray($autoloadPsr);
@@ -261,7 +261,7 @@ class ConfigurationReader
      *
      * @return array<integer,RepositoryInterface>|null The newly created repository list.
      */
-    protected function createRepositories(array $repositories = null)
+    protected function createRepositories(?array $repositories = null)
     {
         if (null !== $repositories) {
             foreach ($repositories as $index => $repository) {
@@ -317,7 +317,7 @@ class ConfigurationReader
      *
      * @return ProjectConfiguration The newly created project configuration object.
      */
-    protected function createProjectConfiguration(stdClass $config = null)
+    protected function createProjectConfiguration(?stdClass $config = null)
     {
         if (null === $config) {
             return new ProjectConfiguration(
@@ -463,7 +463,7 @@ class ConfigurationReader
      *
      * @return ScriptConfiguration|null The newly created script configuration object.
      */
-    protected function createScripts(stdClass $scripts = null)
+    protected function createScripts(?stdClass $scripts = null)
     {
         if (null !== $scripts) {
             $scriptsData = new ObjectAccess($scripts);
@@ -498,7 +498,7 @@ class ConfigurationReader
      *
      * @return ArchiveConfiguration|null The newly created archive configuration object.
      */
-    protected function createArchiveConfiguration(stdClass $archive = null)
+    protected function createArchiveConfiguration(?stdClass $archive = null)
     {
         if (null !== $archive) {
             $archiveData = new ObjectAccess($archive);
@@ -518,7 +518,7 @@ class ConfigurationReader
      *
      * @return array<string,mixed> The converted associative array.
      */
-    protected function objectToArray(stdClass $data = null)
+    protected function objectToArray(?stdClass $data = null)
     {
         if (null !== $data) {
             $data = (array) $data;

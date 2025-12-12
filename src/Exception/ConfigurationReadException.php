@@ -16,7 +16,7 @@ final class ConfigurationReadException extends Exception implements
      * @param string         $path     The path to the configuration.
      * @param Exception|null $previous The cause, if available.
      */
-    public function __construct($path, Exception $previous = null)
+    public function __construct($path, ?Exception $previous = null)
     {
         $this->path = $path;
 

@@ -16,7 +16,7 @@ final class InvalidConfigurationException extends Exception implements
      * @param array<integer,array<integer,string>> $errors   The errors in the configuration.
      * @param Exception|null                       $previous The cause, if available.
      */
-    public function __construct(array $errors, Exception $previous = null)
+    public function __construct(array $errors, ?Exception $previous = null)
     {
         $this->errors = $errors;
 

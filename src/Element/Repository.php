@@ -18,7 +18,7 @@ class Repository extends AbstractRepository
     public function __construct(
         $type,
         $uri = null,
-        array $options = null,
+        ?array $options = null,
         $rawData = null
     ) {
         parent::__construct(

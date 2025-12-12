@@ -12,7 +12,7 @@ class ArchiveConfiguration
      *
      * @param array<integer,string>|null $exclude A list of patterns to exclude from the archive.
      */
-    public function __construct(array $exclude = null, $rawData = null)
+    public function __construct(?array $exclude = null, $rawData = null)
     {
         if (null === $exclude) {
             $exclude = [];

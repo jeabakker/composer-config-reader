@@ -35,8 +35,8 @@ class ProjectConfiguration
         $processTimeout = null,
         $useIncludePath = null,
         $preferredInstall = null,
-        array $githubProtocols = null,
-        array $githubOauth = null,
+        ?array $githubProtocols = null,
+        ?array $githubOauth = null,
         $vendorDir = null,
         $binDir = null,
         $cacheDir = null,
@@ -48,9 +48,9 @@ class ProjectConfiguration
         $prependAutoloader = null,
         $autoloaderSuffix = null,
         $optimizeAutoloader = null,
-        array $githubDomains = null,
+        ?array $githubDomains = null,
         $notifyOnInstall = null,
-        VcsChangePolicy $discardChanges = null,
+        ?VcsChangePolicy $discardChanges = null,
         $rawData = null
     ) {
         if (null === $processTimeout) {
