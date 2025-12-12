@@ -13,7 +13,7 @@
     ],
     "require": {
         "php": ">=7.2",
-        "eloquent/enumeration": "^6",
+        "elgg/enumeration": "dev-master",
         "justinrainbow/json-schema": "^5"
     },
     "require-dev": {
