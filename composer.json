@@ -1,5 +1,5 @@
 {
-    "name": "eloquent/composer-config-reader",
+    "name": "elgg/composer-config-reader",
     "description": "A light-weight component for reading Composer configuration files.",
     "keywords": ["composer", "configuration", "reader", "parser"],
     "homepage": "https://github.com/eloquent/composer-config-reader",
